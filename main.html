@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FrenchSea</title>
+    <script src="scripts/main.js"></script>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="menu-box">
+        <h1>
+            FrenchSea
+
+        </h1>
+        <button class="home-menu" onclick="window.location.href='index.html'">
+            Accueil
+        </button>
+        <button class="streaming-menu" onclick="window.location.href='pages/streaming.html'">
+            Streaming
+        </button>
+        <a class="time" id="time">
+            Time
+        </a>
+        <a class="username" id="username">
+            
+        </a>
+        <button class="connect-menu" onclick="connect()">
+            Connexion
+        </button>
+    </div>
+    <div class="description-box" src="background.jpg">
+        <p class="description">
+            Bienvenu sur FrenchSea, le meilleur site de streaming FR :3
+        </p>
+    </div>
+    <div class="decoration-box" >
+        <img src="background.jpg" class="decoration">
+    </div>
+</body>
+<script>
+    let now = new Date();
+    let hours = now.getHours();
+    let minutes = now.getMinutes();
+    date = document.getElementById("time").innerHTML = hours+ " : " + minutes;
+
+</script>
+</html>
